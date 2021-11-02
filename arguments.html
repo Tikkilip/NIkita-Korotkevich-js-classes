@@ -8,14 +8,19 @@
   </head>
   <body>
     <script>
-      function getName(firstNum = 3, secondNum = 5) {
-        firstNum = prompt("first number");
-        secondNum = prompt("second number");
-        const sum = +firstNum + +secondNum;
-        return sum;
+      function getArgumentsLength(a, b, c) {
+        alert(arguments.length);
+
+        for (let i = 0; i < arguments.length; i++) {
+          alert(arguments[i]);
+        }
       }
 
-      alert(getName());
+      function getRestParameters(a, b, ...rest) {
+        alert(rest);
+      }
+
+      getRestParameters("a", "b", "c", "d");
     </script>
   </body>
 </html>
