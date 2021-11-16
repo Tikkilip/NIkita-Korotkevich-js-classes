@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class People {
+        constructor(_name, _count) {
+          this.name = _name;
+          this.count = _count;
+        }
+
+        getCount() {
+          return this.count;
+        }
+
+        addCount(otherCount) {
+          return this.count + otherCount;
+        }
+      }
+
+      const Minsk = new People("Minsk", 5000000);
+
+      console.log(Minsk.getCount());
+      console.log(Minsk.addCount(1000));
+    </script>
+  </body>
+</html>
